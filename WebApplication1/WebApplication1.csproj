@@ -8,7 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include=".s2i\environment" />
+    <Compile Remove=".s2i\**" />
+    <Content Remove=".s2i\**" />
+    <EmbeddedResource Remove=".s2i\**" />
+    <None Remove=".s2i\**" />
   </ItemGroup>
 
   <ItemGroup>
